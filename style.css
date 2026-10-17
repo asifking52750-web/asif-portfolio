@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+
+}
+
+header{
+    background-color: #222;
+    color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #00dcd4;
+}
+
+.hero{
+    text-align: center;
+    padding: 80px 20px;
+
+}
+
+.hero h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+
+}
+
+.hero p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.hero button:hover{
+    background-color: darkblue;
+  
+}
+
+.about{
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.about h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+
+.skills{
+    padding: 80px 24px;
+    text-align: center;
+
+}
+
+.skills h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.skills p{
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.skills li{
+    display: inline-block;
+    background-color: #007bff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.projects{
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.projects h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects p{
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box{
+    background-color: #fff;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.box h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.box p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.box button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.box button:hover{
+    background-color: darkblue;
+}
+
+.contact{
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p{
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.contact form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact textarea{
+    height: 120px;
+    resize: none;
+}
+
+.contact input[type="submit"]{
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.contact input[type="submit"]:hover{
+    background-color: darkblue;
+}
+
+footer{
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p{
+    font-size: 16px;
+}
+
+
+
+@media (max-width:768px){
+header{
+    padding:20px;
+    flex-direction: column;
+}
+
+nav{
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+    .hero{
+    padding: 60px 20px;
+}
+
+.hero h1{
+    font-size: 36px;
+}
+
+.hero p{
+    font-size: 16px;
+}
+
+.about{
+    padding: 60px 20px;
+}
+
+.about h2{
+    font-size: 30px;
+}
+
+.about p{
+    font-size: 16px;
+}
+
+.skills{
+    padding: 60px 20px;
+}
+
+.skills h2{
+    font-size: 30px;
+}
+
+.skills p{
+    font-size: 16px;
+}
+
+.skills li{
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+}
+
+.projects{
+    padding: 60px 20px;
+}
+
+.projects h2{
+    font-size: 30px;
+}
+
+.projects p{
+    font-size: 16px;
+}
+
+.box{
+    max-width: 100%;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.contact{
+    padding: 60px 20px;
+}
+
+.contact h2{
+    font-size: 30px;
+}
+
+.contact p{
+    font-size: 16px;
+}
+
+
+}
+
+
+
+
+/* @media (max-width: 768px){
+
+    header{
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero{
+        padding: 50px 20px;
+    }
+
+    .hero h1{
+        font-size: 36px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact{
+        padding: 50px 20px;
+    }
+
+    .box{
+        width: 90%;
+    }
+
+} */
+
+
+
+
