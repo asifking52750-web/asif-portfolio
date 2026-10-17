@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // 1. Select HTML elements
-    let heading = document.querySelector(".hero h1");
     let cvButton = document.querySelector(".hero button");
     let projectButton = document.querySelector(".box button");
     let contactForm = document.querySelector(".contact form");
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (targetSection) {
                 event.preventDefault();
-
                 targetSection.scrollIntoView({
                     behavior: "smooth"
                 });
@@ -28,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // 3. Download CV button
     cvButton.addEventListener("click", function () {
         let cvLink = document.createElement("a");
-
         cvLink.href = "Asif-Resume.pdf";
         cvLink.download = "Asif-Resume.pdf";
 
@@ -39,7 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 4. View Project button
     projectButton.addEventListener("click", function () {
-        alert("Project ka live link abhi add karna baaki hai!");
+        window.open(
+            "https://asifking52750-web.github.io/asif-portfolio/",
+            "_blank"
+        );
     });
 
     // 5. Contact form validation
@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         alert("Thank you, " + name + "! Form validation successful.");
-
         contactForm.reset();
     });
 
